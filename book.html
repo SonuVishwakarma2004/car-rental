@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+  font-family: Verdana;
+  background-color: black;
+  color: antiquewhite;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 20px;
+    height: 8vh;
+    color: black;
+    background-color: #ccc;
+}
+.nav h1{
+    margin-left: 2vw;
+    font-size: 2.5vw;
+    font-family: 'Gill Sans';
+    color: black;
+}
+.nav li{
+    margin-right: 2vw;
+    display: flex;
+    font-family: 'Gill Sans';
+
+}
+.nav ul{
+    display: flex;
+    margin-right: 2vw;
+    font-size: 1.4vw;
+    gap: 20px;
+}
+.nav a{
+    text-decoration: none;
+   color: black;
+}
+.nav button{
+    padding: 10px 10px;
+    background-color:black;
+    border-radius: 10px;
+    font-size: 1vw;
+    margin-top: -6px;
+    font-weight: 600;
+}
+.more button a{
+    color: aliceblue;
+
+}
+.hero {
+  height: 100vh;
+  background-image: url(pexels-albin-berlin-919073.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero button{
+  border-radius: 0px 20px 0px 20px;
+    color: rgb(221, 207, 207);
+    background-color: rgb(221, 207, 207);
+    height: 30px;
+    
+}
+.hero button a{
+ padding: 20px;
+ text-decoration: none;
+ color: black;
+ font-family:  sans-serif;
+ font-size: 20px;
+ font-weight: 60;
+}
+.hero p{
+    margin-top: -10px
+}
+.more ul li a:hover{
+    text-shadow: 2px 8px 10px red;
+    color: rgb(247, 62, 38);
+   
+}
+
+.cards{
+  background-image:url(bg.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -19vh;
+}
+
+.vid {
+  height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards h1{
+  height:50px;
+  margin-top:30vh;
+  text-align: center;
+  font-size: 3vw;
+  
+  font-family: 'Franklin';
+}
+
+.card-container {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-container2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #f60;
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+
+.card2 {
+  width: 538px;
+    height: 502px;
+    padding: 20px;
+    margin: -14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.card2 img{
+  width: 100%;
+  height: 600px;
+}
+
+.card2 h3 {
+  margin: 10px 0;
+}
+
+.card2 p {
+  color: rgb(77, 55, 40);
+  margin: 10px 0;
+}
+
+.card2 button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card2 button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width:750px) {
+  .card-container2{
+    display: none;
+  }
+  .nav h1{
+    font-size: 6vw;
+  }
+  .more li{
+    display: none;
+  }
+  .more button{
+    font-size: 2vw;
+  }
+  .cars h1{
+    height: 36px;
+    margin: 16px;
+  }
+  .card2{
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -623px;
+}
+.svg{
+  display: none;
+}
+a img{
+  margin-top: 0px;
+}
+}
+.marque{
+  height: 90px;
+  width: 100%;
+  font-size: 100px;
+  font-family: 'Franklin';
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+
+
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.pg2{
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: -163px;
+
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: red;
+  text-transform: uppercase;
+}
+.text{
+  position: relative;
+  display: contents;
+
+}
+.pg3{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -163px;
+  justify-content: center;
+}
+.contact{
+  width: 100%;
+}
+.svg{
+  width: 239px;
+    filter: invert(1);
+}
+a img{
+  margin-top: 60px;
+} 
+
+.hero button:hover{
+  box-shadow: 50px 50px 80px solid red;
+  background-color: red;
+ 
+}
+.hero button a:hover {
+  color: white;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: auto;
+   
+}
+.te h1{
+  margin-top: 1vh;
+}
+
+
+</style>
+<body>
+<div class="main">
+  <header>
+    <div class="nav">
+    
+        <div class="more">
+            <ul>
+                <li><a href="#about">BIKES</a></li>
+                <li><a href="#">SUV</a></li>
+                <li><a href="#">CARS</a></li>
+                <li><a href="#">SEDAN</a></li>
+                <li><a href="#">TOUR BIKE</a></li>
+                <button><a href="#">contact</a></button>
+            </ul>
+         </div>
+    </div>
+  </header>
+<div class="cards">
+      <div class="card-container">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/17791014/pexels-photo-17791014/free-photo-of-car-parked-on-snow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1g" alt="Product 1">
+          <h3>MUSTANG</h3>
+          <p>$19.99</p>
+          <button><a href="#">VEIW</a></button>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+          <h3>LANBOURGINI</h3>
+          <p>$39.99</p>
+          <button><a href="#">VEIW</a></button>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/9334966/pexels-photo-9334966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+          <h3>MUSTANG </h3>
+          <p>$29.99</p>
+          <button><a href="#">VEIW</a></button>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/16646416/pexels-photo-16646416/free-photo-of-volkswagen-touareg-on-a-parking-lot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+          <h3>WOLSVOGAN</h3>
+          <p>$39.99</p>
+          <button><a href="#">VEIW</a></button>
+        </div>
+        <div class="card-container2">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1005617/pexels-photo-1005617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 1">
+            <h3>URUS</h3>
+            <p>$19.99</p>
+            <button><a href="#">VEIW</a></button>
+          </div>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Product 2">
+            <h3>AUDI</h3>
+            <p>$29.99</p>
+            <button><a href="#">VEIW</a></button>
+          </div>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/10854780/pexels-photo-10854780.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Product 3">
+            <h3>DOGH CHALLANGER</h3>
+            <p>$39.99</p>
+            <button><a href="#">VEIW</a></button>
+          </div>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/4692095/pexels-photo-4692095.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Product 3">
+            <h3>LEXUS</h3>
+            <p>$39.99</p>
+      <button><a href="#">VEIW</a></button>
+          </div>
+         
+         
+    </div>
+    <div class="marque">
+      <marquee scrollamount="30">WEEDING OFFER GET UPTO 30% DESCOUNT BETWEEN 6th TO 30th DECEMBER</marquee>
+    </div>
+    <div class="pg2">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/977003/pexels-photo-977003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 1">
+        <h3>AUSTIN MARTIN</h3>
+        <p>$19.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+        <h3>B M W</h3>
+        <p>$29.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+        <h3>JEEP</h3>
+        <p>$39.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/8905385/pexels-photo-8905385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+        <h3>VINTAGE</h3>
+        <p>$39.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+    </div>
+    </div>
+      <div class="text">
+      <h1 class="te">TOP CARS</h1>
+    </div>
+    <div class="pg3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/13712077/pexels-photo-13712077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 1">
+        <h3>SUPRA MK5</h3>
+        <p>$19.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/12964228/pexels-photo-12964228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+        <h3>FARRARI</h3>
+        <p>$29.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/9735310/pexels-photo-9735310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+        <h3>PORSHE</h3>
+        <p>$39.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/9814981/pexels-photo-9814981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+        <h3>LANBOURGINI</h3>
+        <p>$39.99</p>
+        <button><a href="#">VEIW</a></button>
+      </div>
+    </div>
+    
+    
+    
+<div class="contact">
+  <h1 text-align="center">CONTACT US </h1>
+  <form action="contact.php" method="post" class="contact-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+    
+
+
+
+    </div>
+</body>
+</html>

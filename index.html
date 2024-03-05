@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Car Rental</title>
+
+</head>
+<style>
+  body {
+    font-family: Verdana;
+    background-color: black;
+    color: antiquewhite;
+  }
+  .nav{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      border-radius: 20px;
+      height: 10vh;
+      color: rgb(221, 207, 207);
+  }
+  .nav h1{
+      margin-left: 2vw;
+      font-size: 3vw;
+      font-family: 'Gill Sans';
+  
+  }
+  .nav li{
+      margin-right: 2vw;
+      display: flex;
+      font-family: 'Gill Sans';
+  }
+  .nav ul{
+      display: flex;
+      margin-right: 2vw;
+      font-size: 1.4vw;
+      gap: 20px;
+  }
+  .nav a{
+      text-decoration: none;
+     color: aliceblue;
+  }
+  .nav button{
+      padding: 10px 10px;
+      background-color:black;
+      border-radius: 10px;
+      font-size: 1vw;
+      margin-top: -6px;
+      font-weight: 600;
+  }
+  .more button a{
+      color: aliceblue;
+  
+  }
+  .hero {
+    height: 100vh;
+    background-image: url(pexels-albin-berlin-919073.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero button{
+    border-radius: 0px 20px 0px 20px;
+      color: rgb(221, 207, 207);
+      background-color: rgb(221, 207, 207);
+      height: 30px;
+      
+  }
+  .hero button a{
+   padding: 20px;
+   text-decoration: none;
+   color: black;
+   font-family:  sans-serif;
+   font-size: 20px;
+   font-weight: 60;
+  }
+  .hero p{
+      margin-top: -10px
+  }
+  .more ul li a:hover{
+      text-shadow: 2px 8px 10px red;
+      color: rgb(247, 62, 38);
+     
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 88%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: red;
+    text-transform: uppercase;
+  }
+  .text{
+    position: relative;
+    display: contents;
+  }
+  
+  .hero button:hover{
+    box-shadow: 2px 2px 12px red;
+    background-color: red;
+   transform: scale(1.2);
+  transition: all ease 0.10s;
+  }
+  .hero button a:hover {
+    color: white;
+  }
+  .pg2{
+   height:90vh;
+   width: 100%;
+    background-image: url(bg.jpg);
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+   
+  }
+  .slogan h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: -15vh;
+    text-shadow :black 12px 20px 20px;
+    font-family: 'Gill Sans';
+    color: silver;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .card-container {
+    display: flex;
+    margin-bottom: 170px;
+    justify-content : space-evenly;
+    flex-wrap: wrap;
+
+  }
+  .card:hover{
+    transform: scale(1.2);
+    transition: all ease 0.10s;
+  }
+  .card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  .card p {
+    color: #f60;
+    margin: 10px 0;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  .pg3{
+    height: 90vh;
+    justify-content: space-evenly;
+    margin-left: 1vw;
+    background-image: url(bg.jpg);
+  }
+
+
+  .box{
+    flex-direction: column;
+    display: flex;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .side{
+    height: 750px;
+    width: 475px;
+    background-image: url(pexels-jan-kopřiva-3362551.jpg);
+    background-position: top;
+    background-size: cover;
+    border-radius: 5%;
+    background-color: #242323;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .side h1{
+    text-align: center;
+    margin-top: 30vh;
+    text-wrap: wrap;
+    font-size: 1vw;
+    padding: 20px;
+  }
+  .contact h1{
+    text-align: center;
+  }
+
+  .card:hover{
+    transform: scale(1.2);
+    transition: all ease 0.10s;
+  }
+  .contact{
+    margin-top: -15vh;
+  }
+  .bottom{
+    height: 451px;
+    width: 1350px;
+    background-image: url(bg.jpg);
+    position: relative;
+    border-radius: 5%;
+    background-color: #242323;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50vh;
+    margin-left: 26vw;
+  }
+  .text{
+    height:60px;
+    width: 1350px;
+  background-color:rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 5%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70vh;
+    margin-left: 26vw;
+  }
+  .text h1{
+    text-align: center;
+  }
+  .about{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(97, 97, 97);
+
+  }
+  .about p{
+    text-align: justify;
+    margin: 50px;
+    font-size: large;
+  }
+  .about h1{
+    margin-left: 50px;
+  }
+  .marque{
+    height: 90px;
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Franklin';
+    margin-top: 4vh;
+    
+  }
+  
+</style>
+<body>
+<div class="main">
+  <header>
+    <div class="nav">
+        <h1>CruiseEase Rentals</h1>
+        <div class="more">
+            <ul>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#">OFFERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <button><a href="#">LOGIN HERE</a></button>
+            </ul>
+         </div>
+    </div>
+  </header>
+<div class="hero">
+<h1>Welcome  to  CruiseEase Rentals Service</h1>
+<p>Discover freedom on the road with our premium rental cars</p>
+<button><a href="book.html">Book Now</a></button>
+</div>
+</div>
+<div class="marque">
+  <marquee scrollamount="30">BEST OFFER GET UPTO 30% DESCOUNT BETWEEN 6th TO 30th DECEMBER</marquee>
+</div>
+<div class="cards">
+  <div class="card-container">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/17791014/pexels-photo-17791014/free-photo-of-car-parked-on-snow.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1g" alt="Product 1">
+      <h3>MUSTANG</h3>
+      <p>$19.99</p>
+      <button><a href="#">VEIW</a></button>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+      <h3>LANBOURGINI</h3>
+      <p>$39.99</p>
+      <button><a href="#">VEIW</a></button>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/9334966/pexels-photo-9334966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+      <h3>MUSTANG </h3>
+      <p>$29.99</p>
+      <button><a href="#">VEIW</a></button>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/16646416/pexels-photo-16646416/free-photo-of-volkswagen-touareg-on-a-parking-lot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 3">
+      <h3>WOLSVOGAN</h3>
+      <p>$39.99</p>
+      <button><a href="#">VEIW</a></button>
+    </div>
+</div>
+</div>
+<div class="contact">
+  <h1 >CONTACT US </h1>
+  <form action="contact.php" method="post" class="contact-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+<div class="about">
+<h1>ABOUT US 
+  <p>"Welcome to CruiseEase Rentals, your gateway to seamless and unforgettable journeys. At CruiseEase Rentals, we believe in turning every road trip into a remarkable adventure. With a passion for providing unparalleled service, we strive to redefine your travel experience.
+
+    Discover the freedom to explore at your own pace with our diverse fleet of well-maintained and stylish vehicles. Whether you're embarking on a business trip, a family vacation, or a weekend getaway, we have the perfect ride to suit your needs.
+    
+    What sets us apart? Beyond just offering cars, we offer peace of mind. Our commitment to customer satisfaction is reflected in our transparent policies, competitive rates, and top-notch customer service. We understand that your time is precious, and that's why we've streamlined the reservation process, making it quick and hassle-free.
+    
+    At CruiseEase Rentals , we prioritize your safety and comfort. Our vehicles undergo regular maintenance and stringent cleanliness protocols, ensuring you embark on your journey with confidence. Trust us to be your reliable partner on the road, delivering not just cars, but an experience that exceeds your expectations.
+    
+    Whether you're a frequent traveler or planning a one-time road trip, choose CruiseEase Rentals for a journey where every mile is as enjoyable as the destination. Your adventure begins with us – let's hit the road together!"</p>
+</h1>
+</div>
+</div>
+</body>
+</html>
